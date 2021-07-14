@@ -29,6 +29,7 @@ Route::get('/Welcome',function (){
 
 Route::view('/landing', 'landing');
 Route::view('/about', 'about');
+Route::view('/AA', 'AA');
 
 Auth::routes();
 
