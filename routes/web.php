@@ -30,6 +30,7 @@ Route::get('/Welcome',function (){
 Route::view('/landing', 'landing');
 Route::view('/about', 'about');
 Route::view('/AA', 'AA');
+Route::view('/ss', 'ss');
 
 Auth::routes();
 
