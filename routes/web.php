@@ -42,5 +42,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/logout', function(){
 
-    return 'Home';
+                return 'Home';
+});
+
+Route :: get('fillable','CrudController@getoffer');
+
+Route ::group(['prefix'=>'offers'],function(){
+    //Route :: get('store','CrudController@store');
+    Route :: get('create','CrudController@create');
+    Route :: post('store','CrudController@store') -> name('offers.store');
+
 });
